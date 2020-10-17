@@ -35,7 +35,7 @@ def convo_edge_det(img, imshape, dlim = 30):
             rgb_sum = np.sum(filter*img[i:i+3,j:j+3,:], axis = 2)
             tot_sum = np.sum(np.absolute(rgb_sum))
             if(tot_sum > dlim):
-                print((tot_sum,dlim,i,j))
+                print((tot_sum,dlim))
                 edge_detected[i,j] = 1
 
     # send up edge detected matrix
