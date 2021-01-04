@@ -12,7 +12,7 @@ img = mpimg.imread("../Reef.jpg")
 # print out shape of image
 imshape = np.shape(img)
 print(imshape)
-print(img[400:400+3,400:400+3,:])
+print(img[400:400 + 3, 400:400 + 3, :])
 # disp image
 plt.imshow(img)
 plt.show()
@@ -23,8 +23,8 @@ plt.imshow(grayimg, cmap='gray', vmin=0, vmax=255)
 plt.show()
 
 # edge detected cloud picture
-edgemat = convo_edge_det(img, imshape, dlim = 30)
-plt.imshow(edgemat, cmap = "binary", vmin = 0, vmax = 1)
+edgemat = convo_edge_det(img, imshape, dlim=30)
+plt.imshow(edgemat, cmap="binary", vmin=0, vmax=1)
 plt.show()
 
 # cartoonized function
